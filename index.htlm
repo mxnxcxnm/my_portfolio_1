@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monica N. Mamboundou</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -108,11 +108,11 @@
     <section id="portfolio-projects">
         <h2>Portfolio Projects</h2>
         <div class="projects-grid">
-            <div class="project-card">
+            <div class="project">
                 <h3>Genre by the Numbers</h3>
                 <p>A data-driven exploration of gender representation in media genres. Built interactive dashboards and visualizations to highlight disparities and trends, providing actionable insights for content creators and policy advocates.</p>
             </div>
-            <div class="project-card">
+            <div class="project">
                 <h3>wami</h3>
                 <p>Designed and developed a web-based tool for mapping community assets and needs. Integrated geospatial analysis and participatory research methods to support local decision-making and resource allocation.</p>
             </div>
