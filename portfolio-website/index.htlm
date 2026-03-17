@@ -131,6 +131,7 @@
         <!-- Footer : informations de contact ou copyright -->
         <p>&copy; Monica, 2026</p>
     </footer>
+
 <script src="script.js" defer></script>
 </body>
 </html>
