@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+    <!-- Navigation fixe en haut -->
+    <nav>
+        <ul class="navbar">
+            <li><a href="#about-me">ABOUT ME</a></li>
+            <li><a href="#my-resume">MY RESUME</a></li>
+            <li><a href="#blvcknodes-media">BLVCKNODES & MEDIA</a></li>
+            <li><a href="#portfolio-projects">PORTFOLIO PROJECTS</a></li>
+            <li><a href="#next-big-projects">NEXT BIG PROJECTS</a></li>
+        </ul>
+    </nav>
+
+
+
+    <!-- Header principal -->
+    <header>
+        <!-- Nom, Location (à remplir depuis le PDF) -->
+        <h1 class="main-title">Monica</h1> <!-- À remplacer par le nom exact du PDF -->
+        <p>Ottawa, Canada</p> <!-- À remplacer par la localisation exacte du PDF -->
+    </header>
+
+
+
+    <!-- About Me Section -->
+    <section id="about-me">
+        <h2>About Me</h2>
+        <p>i'm monica and i'm a statistics student based in Ottawa. i am passionate about using data to tell stories, inform policy, and drive social change. my work bridges quantitative analysis, research strategy, and policy systems, with a focus on equity and innovation.</p>
+    </section>
+
+
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill-category">
+                <h3>QUANTITATIVE</h3>
+                <ul>
+                    <li>Statistical Modelling</li>
+                    <li>Data Visualization</li>
+                    <li>Machine Learning</li>
+                    <li>Survey Design & Analysis</li>
+                    <li>R, Python, SQL</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>RESEARCH & STRATEGY</h3>
+                <ul>
+                    <li>Mixed-Methods Research</li>
+                    <li>Program Evaluation</li>
+                    <li>Literature Review</li>
+                    <li>Strategic Planning</li>
+                    <li>Report Writing</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>POLICY & SYSTEMS</h3>
+                <ul>
+                    <li>Policy Analysis</li>
+                    <li>Systems Mapping</li>
+                    <li>Stakeholder Engagement</li>
+                    <li>Knowledge Mobilization</li>
+                    <li>Equity & Inclusion</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>LANGUAGES</h3>
+                <ul>
+                    <li>English (fluent)</li>
+                    <li>French (native)</li>
+                    <li>Italian (intermediate)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Experience Section -->
+    <section id="my-resume">
+        <h2>Experience</h2>
+        <div class="experience">
+            <h3>BlvcknOdes</h3>
+            <p>Developed and implemented mixed-methods research frameworks to analyze the intersection of technology, culture, and equity. Led data collection and analysis for projects focused on digital inclusion and community impact, utilizing both quantitative and qualitative methodologies to inform actionable insights.</p>
+        </div>
+    </section>
+
+
+
+    <!-- BlvcknOdes & Media Section -->
+    <section id="blvcknodes-media">
+        <h2>BlvcknOdes & Media</h2>
+        <!-- Contenu média ou projets liés à BlvcknOdes à insérer ici -->
+    </section>
+
+    <!-- Portfolio Projects Section -->
+    <section id="portfolio-projects">
+        <h2>Portfolio Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Genre by the Numbers</h3>
+                <p>A data-driven exploration of gender representation in media genres. Built interactive dashboards and visualizations to highlight disparities and trends, providing actionable insights for content creators and policy advocates.</p>
+            </div>
+            <div class="project-card">
+                <h3>wami</h3>
+                <p>Designed and developed a web-based tool for mapping community assets and needs. Integrated geospatial analysis and participatory research methods to support local decision-making and resource allocation.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Next Big Projects Section -->
+    <section id="next-big-projects">
+        <h2>Next Big Projects</h2>
+        <!-- Projets à venir à insérer ici depuis le PDF -->
+    </section>
+
+
+    <footer>
+        <!-- Footer : informations de contact ou copyright -->
+        <p>&copy; Monica, 2026</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
