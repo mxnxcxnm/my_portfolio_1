@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,14 +9,27 @@
 </head>
 <body>
 
-    <!-- Navigation handled by arrows and clickable section titles/numbers -->
+
+    <!-- Navigation fixe en haut -->
+    <nav>
+        <ul class="navbar">
+            <li><a href="#about-me">ABOUT ME</a></li>
+            <li><a href="#my-resume">MY RESUME</a></li>
+            <li><a href="#blvcknodes-media">BLVCKNODES & MEDIA</a></li>
+            <li><a href="#portfolio-projects">PORTFOLIO PROJECTS</a></li>
+            <li><a href="#next-big-projects">NEXT BIG PROJECTS</a></li>
+        </ul>
+    </nav>
 
 
-    <!-- Header Section -->
+
+    <!-- Header principal -->
     <header>
-        <h1 class="main-title">Monica</h1>
-        <p>Ottawa, Canada</p>
+        <!-- Nom, Location (à remplir depuis le PDF) -->
+        <h1 class="main-title">Monica</h1> <!-- À remplacer par le nom exact du PDF -->
+        <p>Ottawa, Canada</p> <!-- À remplacer par la localisation exacte du PDF -->
     </header>
+
 
 
     <!-- About Me Section -->
@@ -25,8 +39,9 @@
     </section>
 
 
+
     <!-- Skills Section -->
-    <section id="my-resume">
+    <section id="skills">
         <h2>Skills</h2>
         <div class="skills">
             <div class="skill-category">
@@ -71,8 +86,9 @@
     </section>
 
 
+
     <!-- Experience Section -->
-    <section id="blvcknodes-media">
+    <section id="my-resume">
         <h2>Experience</h2>
         <div class="experience">
             <h3>BlvcknOdes</h3>
@@ -81,27 +97,39 @@
     </section>
 
 
+
+    <!-- BlvcknOdes & Media Section -->
+    <section id="blvcknodes-media">
+        <h2>BlvcknOdes & Media</h2>
+        <!-- Contenu média ou projets liés à BlvcknOdes à insérer ici -->
+    </section>
+
     <!-- Portfolio Projects Section -->
     <section id="portfolio-projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Genre by the Numbers</h3>
-            <p>A data-driven exploration of gender representation in media genres. Built interactive dashboards and visualizations to highlight disparities and trends, providing actionable insights for content creators and policy advocates.</p>
-        </div>
-        <div class="project">
-            <h3>wami</h3>
-            <p>Designed and developed a web-based tool for mapping community assets and needs. Integrated geospatial analysis and participatory research methods to support local decision-making and resource allocation.</p>
+        <h2>Portfolio Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Genre by the Numbers</h3>
+                <p>A data-driven exploration of gender representation in media genres. Built interactive dashboards and visualizations to highlight disparities and trends, providing actionable insights for content creators and policy advocates.</p>
+            </div>
+            <div class="project-card">
+                <h3>wami</h3>
+                <p>Designed and developed a web-based tool for mapping community assets and needs. Integrated geospatial analysis and participatory research methods to support local decision-making and resource allocation.</p>
+            </div>
         </div>
     </section>
+
 
     <!-- Next Big Projects Section -->
     <section id="next-big-projects">
         <h2>Next Big Projects</h2>
-        <!-- Insert: Next projects from PDF -->
+        <!-- Projets à venir à insérer ici depuis le PDF -->
     </section>
 
+
     <footer>
-        <p>&copy; <!-- Name here -->, 2026</p>
+        <!-- Footer : informations de contact ou copyright -->
+        <p>&copy; Monica, 2026</p>
     </footer>
 </body>
 <script src="script.js"></script>
