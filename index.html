@@ -1,136 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monica N. Mamboundou</title>
-    <link rel="stylesheet" href="portfolio-website/style.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monica N. Mamboundou</title>
+  <link rel="stylesheet" href="portfolio-website/style.css">
 </head>
-
 <body>
 
+<!-- ============================================================
+     SLIDE DEFINITIONS
+     Structure: slide-[sectionIndex]-[pageIndex]
+     sectionIndex: 0=hero, 1=about, 2=resume, 3=blvck, 4=portfolio, 5=next
+============================================================ -->
 
-    <!-- Navigation fixe en haut -->
-    <nav>
-        <ul class="navbar">
-            <li><a href="#about-me">ABOUT ME</a></li>
-            <li><a href="#my-resume">MY RESUME</a></li>
-            <li><a href="#blvcknodes-media">BLVCKNODES & MEDIA</a></li>
-            <li><a href="#portfolio-projects">PORTFOLIO PROJECTS</a></li>
-            <li><a href="#next-big-projects">NEXT BIG PROJECTS</a></li>
+<!-- SECTION 0: HERO (landing page, dark navy) -->
+<div class="slide active" id="slide-0-0">
+  <div class="hero-header">
+    <div class="location-block">
+      📍 OTTAWA, ON<br>WILLING TO RELOCATE
+    </div>
+    <div class="lang-email">
+      EN &nbsp; FR &nbsp;&nbsp; EMAIL: <a href="mailto:monicak.mnm@outlook.com">MONICAK.MNM@OUTLOOK.COM</a>
+    </div>
+  </div>
+  <div class="hero-center">
+    <h1 class="main-title">MONICA N.<br>MAMBOUNDOU</h1>
+  </div>
+  <nav class="bottom-nav" id="bnav-0-0"></nav>
+</div>
+
+<!-- SECTION 1: ABOUT ME — page 1 -->
+<div class="slide slide-light" id="slide-1-0">
+  <div class="topbar">
+    <span class="topbar-logo">MonicaNMamboundou</span>
+    <span class="topbar-section-label">ABOUT ME <span class="icon">⟳</span></span>
+  </div>
+  <button class="arrow left hidden" onclick="navigate(-1)">&#8249;</button>
+  <div class="slide-content">
+    <p class="about-text">
+      i'm monica and i'm a statistics student based in Ottawa.<br><br>
+      i mix code with context (<span class="highlight">R, Python, Java, AI, PostgreSQL</span> and <span class="highlight">Power BI</span>) to understand and support innovation in everything from aviation tech to viral content trends.
+    </p>
+  </div>
+  <button class="arrow right" onclick="navigate(1)">&#8250;</button>
+  <nav class="bottom-nav" id="bnav-1-0"></nav>
+</div>
+
+<!-- SECTION 1: ABOUT ME — page 2 -->
+<div class="slide slide-light" id="slide-1-1">
+  <div class="topbar">
+    <span class="topbar-logo">MonicaNMamboundou</span>
+    <span class="topbar-section-label">ABOUT ME <span class="icon">⟳</span></span>
+  </div>
+  <button class="arrow left" onclick="navigate(-1)">&#8249;</button>
+  <div class="slide-content">
+    <p class="about-text">
+      I'm currently looking for Summer 2026 opportunities where I can help research and development teams with data-driven strategy and finding clarity in their data without getting lost in the spreadsheets.
+    </p>
+    <div class="tag-row">
+      <span class="tag">R/PYTHON ANALYTICS</span>
+      <span class="tag">PREDICTIVE MODELING</span>
+      <span class="tag">DATA-TO-STRATEGY</span>
+      <span class="tag">MIXED-METHODS RESEARCH</span>
+      <span class="tag">ACTIONABLE INSIGHTS</span>
+    </div>
+  </div>
+  <button class="arrow right hidden" onclick="navigate(1)">&#8250;</button>
+  <nav class="bottom-nav" id="bnav-1-1"></nav>
+</div>
+
+<!-- SECTION 2: MY RESUME — page 1 (Skills) -->
+<div class="slide slide-light" id="slide-2-0">
+  <div class="topbar">
+    <span class="topbar-logo">MonicaNMamboundou</span>
+    <span class="topbar-section-label">MY RESUME <span class="icon">⟳</span></span>
+  </div>
+  <button class="arrow left hidden" onclick="navigate(-1)">&#8249;</button>
+  <div class="slide-content">
+    <h2 class="section-heading">SKILLS</h2>
+    <div class="skills-grid">
+      <div class="skill-label">QUANTITATIVE</div>
+      <div class="skill-value">R, Python, Power BI, Advanced Excel, Hypothesis Testing, Statistical Modeling, Regression Analysis</div>
+      <div class="skill-label">RESEARCH &amp; STRATEGY</div>
+      <div class="skill-value">Mixed-Methods Design, Competitive Benchmarking, SWOT Analysis, Secondary Data Synthesis, Interdependency Mapping</div>
+      <div class="skill-label">POLICY &amp; SYSTEMS</div>
+      <div class="skill-value">Political Risk Assessment, Institutional Design, Digital Governance, Data-Driven Decision Making</div>
+      <div class="skill-label">LANGUAGES</div>
+      <div class="skill-value">French (Native), English (Bilingual), Italian (Intermediary)</div>
+    </div>
+  </div>
+  <button class="arrow right" onclick="navigate(1)">&#8250;</button>
+  <nav class="bottom-nav" id="bnav-2-0"></nav>
+</div>
+
+<!-- SECTION 2: MY RESUME — page 2 (Experience: BlvcknOdes) -->
+<div class="slide slide-light" id="slide-2-1">
+  <div class="topbar">
+    <span class="topbar-logo">MonicaNMamboundou</span>
+    <span class="topbar-section-label">MY RESUME <span class="icon">⟳</span></span>
+  </div>
+  <button class="arrow left" onclick="navigate(-1)">&#8249;</button>
+  <div class="slide-content">
+    <div class="exp-title">BlvcknOdes | Independent Research Platform</div>
+    <div class="exp-subtitle">OTTAWA, ON | 2025 – PRESENT</div>
+    <p class="exp-body">
+      Designed mixed-methods research frameworks applying game theory and behavioural economics to deep tech ecosystems and sports analytics; published 20+ bilingual analyses with 18% avg. engagement, synthesising complex data into actionable insights for strategy-focused readers.
+    </p>
+  </div>
+  <button class="arrow right" onclick="navigate(1)">&#8250;</button>
+  <nav class="bottom-nav" id="bnav-2-1"></nav>
+</div>
+
+<!-- SECTION 2: MY RESUME — pages 3-6 are placeholder continuations -->
+<div class="slide slide-light" id="slide-2-2">
+  <div class="topbar">
+    <span class="topbar-logo">MonicaNMamboundou</span>
+    <span class="topbar-section-label">MY RESUME <span class="icon">⟳</span></span>
+  </div>
+  <button class="arrow left" onclick="navigate(-1)">&#8249;</button>
+  <div class="slide-content">
+    <p class="about-text" style="color:#aaa;font-size:1rem;">[Resume page 3 — add your content here]</p>
+  </div>
+  <button class="arrow right" onclick="navigate(1)">&#8250;</button>
+  <nav class="bottom-nav" id="bnav-2-2"></nav>
+</div>
+
+<div class="slide slide-light" id="slide-2-3">
+  <div class="topbar">
+    <span class="topbar-logo">MonicaNMamboundou</span>
+    <span class="topbar-section-label">MY RESUME <span class="icon">⟳</span></span>
+  </div>
+  <button class="arrow left" onclick="navigate(-1)">&#8249;</button>
+  <div class="slide-content">
+    <p class="about-text" style="color:#aaa;font-size:1rem;">[Resume page 4 — add your content here]</p>
+  </div>
+  <button class="arrow right" onclick="navigate(1)">&#8250;</button>
+  <nav class="bottom-nav" id="bnav-2-3"></nav>
+</div>
+
+<div class="slide slide-light" id="slide-2-4">
+  <div class="topbar">
+    <span class="topbar-logo">MonicaNMamboundou</span>
+    <span class="topbar-section-label">MY RESUME <span class="icon">⟳</span></span>
+  </div>
+  <button class="arrow left" onclick="navigate(-1)">&#8249;</button>
+  <div class="slide-content">
+    <p class="about-text" style="color:#aaa;font-size:1rem;">[Resume page 5 — add your content here]</p>
+  </div>
+  <button class="arrow right" onclick="navigate(1)">&#8250;</button>
+  <nav class="bottom-nav" id="bnav-2-4"></nav>
+</div>
+
+<div class="slide slide-light" id="slide-2-5">
+  <div class="topbar">
+    <span class="topbar-logo">MonicaNMamboundou</span>
+    <span class="topbar-section-label">MY RESUME <span class="icon">⟳</span></span>
+  </div>
+  <button class="arrow left" onclick="navigate(-1)">&#8249;</button>
+  <div class="slide-content">
+    <p class="about-text" style="color:#aaa;font-size:1rem;">[Resume page 6 — add your content here]</p>
+  </div>
+  <button class="arrow right hidden" onclick="navigate(1)">&#8250;</button>
+  <nav class="bottom-nav" id="bnav-2-5"></nav>
+</div>
+
+<!-- SECTION 3: BLVCKNODES & MEDIA — page 1 -->
+<div class="slide slide-light" id="slide-3-0">
+  <div class="topbar">
+    <span class="topbar-logo">MonicaNMamboundou</span>
+    <span class="topbar-section-label">BLVCKNODES &amp; MEDIA <span class="icon">⟳</span></span>
+  </div>
+  <button class="arrow left hidden" onclick="navigate(-1)">&#8249;</button>
+  <div class="slide-content">
+    <div class="newsletter-frame">
+      <div class="newsletter-mock-header">blvcknOdes</div>
+      <div class="newsletter-mock-image">node 11 — si les chemins mènent à Rome<br>c'est que Rome faisait partie du chemin</div>
+    </div>
+    <p class="blvck-desc">
+      blvcknOdes is a bilingual (FR/EN) newsletter on innovation, finance and business strategy with a thesis built around 3 principles:
+    </p>
+    <div class="tag-row">
+      <span class="tag">LONG-TERM VALUE CREATION</span>
+      <span class="tag">ECOSYSTEM BUILDING</span>
+      <span class="tag">VALUE ALIGNMENT</span>
+    </div>
+  </div>
+  <button class="arrow right" onclick="navigate(1)">&#8250;</button>
+  <nav class="bottom-nav" id="bnav-3-0"></nav>
+</div>
+
+<!-- SECTION 3: BLVCKNODES — pages 2-3 placeholder -->
+<div class="slide slide-light" id="slide-3-1">
+  <div class="topbar">
+    <span class="topbar-logo">MonicaNMamboundou</span>
+    <span class="topbar-section-label">BLVCKNODES &amp; MEDIA <span class="icon">⟳</span></span>
+  </div>
+  <button class="arrow left" onclick="navigate(-1)">&#8249;</button>
+  <div class="slide-content">
+    <p class="about-text" style="color:#aaa;font-size:1rem;">[BlvcknOdes page 2 — add your content here]</p>
+  </div>
+  <button class="arrow right" onclick="navigate(1)">&#8250;</button>
+  <nav class="bottom-nav" id="bnav-3-1"></nav>
+</div>
+
+<div class="slide slide-light" id="slide-3-2">
+  <div class="topbar">
+    <span class="topbar-logo">MonicaNMamboundou</span>
+    <span class="topbar-section-label">BLVCKNODES &amp; MEDIA <span class="icon">⟳</span></span>
+  </div>
+  <button class="arrow left" onclick="navigate(-1)">&#8249;</button>
+  <div class="slide-content">
+    <p class="about-text" style="color:#aaa;font-size:1rem;">[BlvcknOdes page 3 — add your content here]</p>
+  </div>
+  <button class="arrow right hidden" onclick="navigate(1)">&#8250;</button>
+  <nav class="bottom-nav" id="bnav-3-2"></nav>
+</div>
+
+<!-- SECTION 4: PORTFOLIO PROJECTS — page 1 (Genre by the Numbers overview) -->
+<div class="slide slide-light" id="slide-4-0">
+  <div class="topbar">
+    <span class="topbar-logo">MonicaNMamboundou</span>
+    <span class="topbar-section-label">PORTFOLIO PROJECTS <span class="icon">⟳</span></span>
+  </div>
+  <button class="arrow left hidden" onclick="navigate(-1)">&#8249;</button>
+  <div class="slide-content">
+    <div class="project-title-big">GENRE BY THE NUMBERS: REVENUE PROJECTIONS BY GENRE</div>
+    <div class="project-subtitle">MUSIC ANALYTICS | STRATEGIC DATA FRAMEWORK (2026)</div>
+    <p class="project-body">
+      A data-driven exploration of revenue potential across music genres. Built using a 550k-song Spotify dataset, multivariate regression, and KNN imputation — connecting audio features to financial projections for independent producers and A&R teams.
+    </p>
+    <div class="tag-row">
+      <span class="tag">DATA ANALYTICS</span>
+      <span class="tag">FINANCIAL MODELING &amp; FORECASTING</span>
+    </div>
+  </div>
+  <button class="arrow right" onclick="navigate(1)">&#8250;</button>
+  <nav class="bottom-nav" id="bnav-4-0"></nav>
+</div>
+
+<!-- SECTION 4: PORTFOLIO — page 2 (Methodology / Results) -->
+<div class="slide slide-light" id="slide-4-1">
+  <div class="topbar">
+    <span class="topbar-logo">MonicaNMamboundou</span>
+    <span class="topbar-section-label">PORTFOLIO PROJECTS <span class="icon">⟳</span></span>
+  </div>
+  <button class="arrow left" onclick="navigate(-1)">&#8249;</button>
+  <div class="slide-content" style="padding: 80px 80px 60px;">
+    <div class="project-title-big" style="margin-bottom:24px;">GENRE BY THE NUMBERS — METHODOLOGY &amp; RESULTS</div>
+    <div class="two-col">
+      <div>
+        <h4>METHODOLOGY</h4>
+        <ul>
+          <li><strong>Decompose:</strong> Broke down genre identity into quantifiable audio features (BPM, duration, key, mode) and engagement proxies.</li>
+          <li><strong>Diagnose Leverage:</strong> Used multivariate regression and correlation matrices to isolate high-impact structural variables.</li>
+          <li><strong>Recombine:</strong> Integrated fintech financial projection logic and KNN imputation to build a decision-support tool for creative investment.</li>
         </ul>
-    </nav>
+      </div>
+      <div>
+        <h4>RESULTS &amp; INSIGHTS</h4>
+        <ul>
+          <li>BPM and track duration explain ~68% of streaming variance in pop/electronic genres.</li>
+          <li>Excel-based projection tool offers an interpretable alternative to black-box ML models.</li>
+          <li>Framework is portable across film, publishing, and gaming content evaluation.</li>
+          <li>Supports "pre-greenlight" ROI estimation before full production investment.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <button class="arrow right" onclick="navigate(1)">&#8250;</button>
+  <nav class="bottom-nav" id="bnav-4-1"></nav>
+</div>
 
+<!-- SECTION 4: PORTFOLIO — page 3 (wami) -->
+<div class="slide slide-light" id="slide-4-2">
+  <div class="topbar">
+    <span class="topbar-logo">MonicaNMamboundou</span>
+    <span class="topbar-section-label">PORTFOLIO PROJECTS <span class="icon">⟳</span></span>
+  </div>
+  <button class="arrow left" onclick="navigate(-1)">&#8249;</button>
+  <div class="slide-content">
+    <div class="project-title-big">WAMI</div>
+    <div class="project-subtitle">COMMUNITY MAPPING TOOL | GEOSPATIAL + PARTICIPATORY RESEARCH</div>
+    <p class="project-body">
+      Designed and developed a web-based tool for mapping community assets and needs. Integrated geospatial analysis and participatory research methods to support local decision-making and resource allocation.
+    </p>
+  </div>
+  <button class="arrow right" onclick="navigate(1)">&#8250;</button>
+  <nav class="bottom-nav" id="bnav-4-2"></nav>
+</div>
 
+<!-- SECTION 4: PORTFOLIO — page 4 placeholder -->
+<div class="slide slide-light" id="slide-4-3">
+  <div class="topbar">
+    <span class="topbar-logo">MonicaNMamboundou</span>
+    <span class="topbar-section-label">PORTFOLIO PROJECTS <span class="icon">⟳</span></span>
+  </div>
+  <button class="arrow left" onclick="navigate(-1)">&#8249;</button>
+  <div class="slide-content">
+    <p class="about-text" style="color:#aaa;font-size:1rem;">[Portfolio page 4 — add your content here]</p>
+  </div>
+  <button class="arrow right hidden" onclick="navigate(1)">&#8250;</button>
+  <nav class="bottom-nav" id="bnav-4-3"></nav>
+</div>
 
-    <!-- Header principal -->
-    <header>
-        <!-- Nom, Location (à remplir depuis le PDF) -->
-        <h1 class="main-title">Monica</h1> <!-- À remplacer par le nom exact du PDF -->
-        <p>Ottawa, Canada</p> <!-- À remplacer par la localisation exacte du PDF -->
-    </header>
+<!-- SECTION 5: NEXT BIG PROJECTS — page 1 (WAMI) -->
+<div class="slide slide-light" id="slide-5-0">
+  <div class="topbar">
+    <span class="topbar-logo">MonicaNMamboundou</span>
+    <span class="topbar-section-label">NEXT BIG PROJECTS <span class="icon">⟳</span></span>
+  </div>
+  <button class="arrow left hidden" onclick="navigate(-1)">&#8249;</button>
+  <div class="slide-content">
+    <div class="wami-title">WAMI</div>
+    <div class="version-label">
+      CURRENT VERSION: <span class="tag">1.0 (MVP Development)</span>
+    </div>
+    <p class="wami-body">
+      wami is a conversational AI language learning PWA designed to achieve deep fluency through personalized, vernacular-aware dialogue. Unlike gamified competitors (e.g., Duolingo), wami focuses on constructivist pedagogy, using AI to emulate natural speech patterns and topics of interest derived from user preferences.
+    </p>
+    <p class="wami-body">
+      The platform prioritises low-resource languages (starting with Sango), supports dialectal variations (Creoles, vernaculars), and employs a Hybrid Architecture (On-device Wasm + Cloud AI) to balance privacy, latency, and computational power.
+    </p>
+    <div class="tag-row">
+      <span class="tag">AI-POWERED LANGUAGE TECHNOLOGY</span>
+      <span class="tag">ITERATIVE PRODUCT DEVELOPMENT</span>
+    </div>
+  </div>
+  <button class="arrow right" onclick="navigate(1)">&#8250;</button>
+  <nav class="bottom-nav" id="bnav-5-0"></nav>
+</div>
 
-
-
-    <!-- About Me Section -->
-    <section id="about-me">
-        <h2>About Me</h2>
-        <p>i'm monica and i'm a statistics student based in Ottawa. i am passionate about using data to tell stories, inform policy, and drive social change. my work bridges quantitative analysis, research strategy, and policy systems, with a focus on equity and innovation.</p>
-    </section>
-
-
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills">
-            <div class="skill-category">
-                <h3>QUANTITATIVE</h3>
-                <ul>
-                    <li>Statistical Modelling</li>
-                    <li>Data Visualization</li>
-                    <li>Machine Learning</li>
-                    <li>Survey Design & Analysis</li>
-                    <li>R, Python, SQL</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3>RESEARCH & STRATEGY</h3>
-                <ul>
-                    <li>Mixed-Methods Research</li>
-                    <li>Program Evaluation</li>
-                    <li>Literature Review</li>
-                    <li>Strategic Planning</li>
-                    <li>Report Writing</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3>POLICY & SYSTEMS</h3>
-                <ul>
-                    <li>Policy Analysis</li>
-                    <li>Systems Mapping</li>
-                    <li>Stakeholder Engagement</li>
-                    <li>Knowledge Mobilization</li>
-                    <li>Equity & Inclusion</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3>LANGUAGES</h3>
-                <ul>
-                    <li>English (fluent)</li>
-                    <li>French (native)</li>
-                    <li>Italian (intermediate)</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-
-
-    <!-- Experience Section -->
-    <section id="my-resume">
-        <h2>Experience</h2>
-        <div class="experience">
-            <h3>BlvcknOdes</h3>
-            <p>Developed and implemented mixed-methods research frameworks to analyze the intersection of technology, culture, and equity. Led data collection and analysis for projects focused on digital inclusion and community impact, utilizing both quantitative and qualitative methodologies to inform actionable insights.</p>
-        </div>
-    </section>
-
-
-
-    <!-- BlvcknOdes & Media Section -->
-    <section id="blvcknodes-media">
-        <h2>BlvcknOdes & Media</h2>
-        <!-- Contenu média ou projets liés à BlvcknOdes à insérer ici -->
-    </section>
-
-    <!-- Portfolio Projects Section -->
-    <section id="portfolio-projects">
-        <h2>Portfolio Projects</h2>
-        <div class="projects-grid">
-            <div class="project">
-                <h3>Genre by the Numbers</h3>
-                <p>A data-driven exploration of gender representation in media genres. Built interactive dashboards and visualizations to highlight disparities and trends, providing actionable insights for content creators and policy advocates.</p>
-            </div>
-            <div class="project">
-                <h3>wami</h3>
-                <p>Designed and developed a web-based tool for mapping community assets and needs. Integrated geospatial analysis and participatory research methods to support local decision-making and resource allocation.</p>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Next Big Projects Section -->
-    <section id="next-big-projects">
-        <h2>Next Big Projects</h2>
-        <!-- Projets à venir à insérer ici depuis le PDF -->
-    </section>
-
-
-    <footer>
-        <!-- Footer : informations de contact ou copyright -->
-        <p>&copy; Monica, 2026</p>
-    </footer>
+<!-- SECTION 5: NEXT BIG PROJECTS — page 2 placeholder -->
+<div class="slide slide-light" id="slide-5-1">
+  <div class="topbar">
+    <span class="topbar-logo">MonicaNMamboundou</span>
+    <span class="topbar-section-label">NEXT BIG PROJECTS <span class="icon">⟳</span></span>
+  </div>
+  <button class="arrow left" onclick="navigate(-1)">&#8249;</button>
+  <div class="slide-content">
+    <p class="about-text" style="color:#aaa;font-size:1rem;">[Next Big Projects page 2 — add your content here]</p>
+  </div>
+  <button class="arrow right hidden" onclick="navigate(1)">&#8250;</button>
+  <nav class="bottom-nav" id="bnav-5-1"></nav>
+</div>
 
 <script src="portfolio-website/script.js" defer></script>
 </body>
