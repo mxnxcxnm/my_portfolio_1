@@ -142,6 +142,11 @@ document.addEventListener('DOMContentLoaded', function () {
     window.navigate = navigate;
     window.goTo     = goTo;
 
+    // ── HOME ICON: clicking ⟳ on any topbar returns to hero ──
+document.querySelectorAll('.topbar-section-label .icon').forEach(icon => {
+    icon.addEventListener('click', () => goTo(0, 0));
+});
+
     // ── INIT ─────────────────────────────────────────────
     buildAllNavs();
     updateAllNavs();
