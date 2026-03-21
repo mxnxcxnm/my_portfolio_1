@@ -405,8 +405,8 @@ html, body {
 
 @font-face {
     font-family: 'TD Kalayaan';
-    src: url('./font/TD-Kalayaan-Regular.otf') format('opentype'),
-         url('./font/TD-Kalayaan-Regular.ttf') format('truetype');
+    src: url('./fonts/TD-Kalayaan-Regular.otf') format('opentype'),
+         url('./fonts/TD-Kalayaan-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -414,7 +414,7 @@ html, body {
 /* ── HERO TITLE FONT FIX ── */
 #slide-0-0 .main-title {
     font-family: 'TD Kalayaan', 'Barlow Condensed', Arial, sans-serif;
-    font-size: clamp(5rem, 13vw, 11rem);
+    font-size: clamp(4rem, 10vw, 8rem);
     color: var(--home-title);
     text-align: center;
     line-height: 0.92;
