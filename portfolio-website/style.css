@@ -489,7 +489,7 @@ html, body {
 .project-images img {
     height: 200px;
     width: auto;
-    max-width: 48%;
+    max-width: 400%;
     border-radius: 6px;
     border: 1.5px solid #ddd;
     object-fit: cover;
