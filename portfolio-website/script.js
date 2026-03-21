@@ -8,9 +8,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const SECTIONS = [
         { htmlSec: 1, title: 'ABOUT ME',           pages: 2 },
         { htmlSec: 2, title: 'MY RESUME',          pages: 6 },
-        { htmlSec: 3, title: 'BLVCKNODES & MEDIA', pages: 3 },
-        { htmlSec: 4, title: 'PORTFOLIO PROJECTS', pages: 4 },
-        { htmlSec: 5, title: 'NEXT BIG PROJECTS',  pages: 2 },
+        { htmlSec: 3, title: 'BLVCKNODES & MEDIA', pages: 1 },
+        { htmlSec: 4, title: 'PORTFOLIO PROJECTS', pages: 9 },
+        { htmlSec: 5, title: 'NEXT BIG PROJECTS',  pages: 1 },
     ];
 
     let currentSec  = 0; // 0 = hero
